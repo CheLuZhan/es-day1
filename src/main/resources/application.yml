@@ -1,0 +1,32 @@
+server:
+  port: 8989
+  context-path: /es-day1
+  jsp-servlet:
+    init-parameters:
+      development: true   #页面热部署
+#数据源
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/three
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  #视图解析器
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  aop:
+    proxy-target-class: true    #修改代理形式
+  jackson:
+    date-format: yyyy-MM-dd     #返回时间类型格式 全局配置
+mybatis:
+  type-aliases-package: com.baizhi.entity
+  mapper-locations: classpath:com/baizhi/mapper/*Mapper.xml
+logging:
+  level:
+    root: info
+    com.baizhi.dao: debug
+  pattern:
+    console: "[%p]%l:%m%n"
