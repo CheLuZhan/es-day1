@@ -11,10 +11,6 @@ public class SpringBootApp {
         SpringApplication.run(SpringBootApp.class, args);
         System.out.println("qwe");
         System.out.println("qwe");
-        System.out.println("qwe");
-        System.out.println("qwe");
-        System.out.println("qwe");
-        System.out.println("jjj");
-        System.out.println("jjj");
+
     }
 }
