@@ -10,7 +10,8 @@ public class SpringBootApp {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootApp.class, args);
         System.out.println("qwe");
-        System.out.println("rrrr");
-        System.out.println("ggggg");
+        System.out.println("qwe");
+        System.out.println("qwe");
+        System.out.println("qwe");
     }
 }
